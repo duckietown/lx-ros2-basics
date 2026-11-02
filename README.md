@@ -41,11 +41,11 @@ that you created a fork):
 
 ## 2. Make sure your system is up-to-date
 
-- 💻 Always make sure your Duckietown Shell is updated to the latest version. See [installation instructions](https://github.com/duckietown/duckietown-shell)
+- 💻 Always make sure your Duckietown Shell is updated to the latest version: `pipx upgrade duckietown-shell` (see the [installation instructions](https://github.com/duckietown/duckietown-shell))
 
 - 💻 Update the shell commands: `dts update`
 
-- 💻 Update your laptop/desktop: `dts desktop update`
+- 💻 Make sure all the Docker images on your laptop/desktop are up to date: `dts desktop update`
 
 - 🚙 Update your Duckiebot: `dts duckiebot update ROBOTNAME`
 (where `ROBOTNAME` is the name of your Duckiebot - real or virtual.)
@@ -155,7 +155,9 @@ inside a Docker image; a syntax error in your nodes shows up here.
 
 Then you may run your code with
 
-    $ dts code workbench -R ROBOTNAME [-m]
+```
+dts code workbench -R ROBOTNAME [-m]
+```
 
 where ROBOTNAME can be either a real or virtual robot, but if it is a virtual robot, you should include the `-m` option
 to indicate that you want to test it in the Duckiematrix. The workbench runs the launcher of this
