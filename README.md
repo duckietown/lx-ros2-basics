@@ -131,8 +131,8 @@ Robots (virtual ones too) boot their ROS 1 stack automatically; the ROS 2 stack 
 for now. Run, for your real or virtual robot:
 
 ```
-dts stack up -R ROBOTNAME ros2/duckiebot
-dts stack up -R ROBOTNAME ros2-core/default
+dts stack up -H ROBOTNAME ros2/duckiebot
+dts stack up -H ROBOTNAME ros2-core/default
 ```
 
 The first stack starts the zenoh router and the sensor and actuator drivers (`camera_node`,
