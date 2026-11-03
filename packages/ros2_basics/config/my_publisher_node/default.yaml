@@ -1,0 +1,4 @@
+/**:
+  ros__parameters:
+    message: "Hello from ROS 2!"
+    rate_hz: 1.0
