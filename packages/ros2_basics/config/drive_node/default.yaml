@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    v: 0.2            # [m/s]   forward speed sent while driving
+    omega: 0.0        # [rad/s] angular speed (positive = turn left)
+    rate_hz: 10.0     # [Hz]    how often a command is published
+    max_duration: 5.0 # [s]     stop automatically this long after `start` (0 = never)
+    enabled: false    # set to true by the `start` service, false by `stop`

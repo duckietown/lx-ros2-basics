@@ -1,8 +1,17 @@
-docs/build
-*pyc
+# python
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
 
-# documentation artifacts
-html/*
+# notebooks
+.ipynb_checkpoints/
 
-# otherwise CI thinks index not clean
+# colcon output (generated when building the packages in the editor)
+/build/
+/install/
+/log/
+
+# editors / OS
+.DS_Store
 *.resolved
